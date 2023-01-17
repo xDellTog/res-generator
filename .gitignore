@@ -1,1 +1,7 @@
 node_modules/
+
+assets/*
+!assets/.gitkeep
+
+output/*
+!output/.gitkeep
