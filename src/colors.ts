@@ -1,3 +1,9 @@
+/**
+ * An enum with allowed colors to use in {@link Colorize}.
+ * ```
+ * Default, Black, Red, Green, Yellow, Blue, Magenta, Cyan, White, Gray, BrightRed, BrightGreen, BrightYellow, BrightBlue, BrightMagenta, BrightCyan, BrightWhite.
+ * ```
+ */
 export enum Colors {
   Default = 0,
   Black = 30,
@@ -18,72 +24,161 @@ export enum Colors {
   BrightWhite = 97,
 }
 
+/**
+ * Class with static methods to colorize console string.
+ */
 export default class Colorize {
-  static colorize(value: string, color: Colors) {
+  /**
+   * Colorize console string method.
+   * @param value string
+   * @param color {@link Colors}
+   * @returns string
+   */
+  static colorize(value: string, color: Colors): string {
     return `\x1b[${color}m ${value} \x1b[${Colors.Default}m`;
   }
 
-  static black(value: string) {
+  /**
+   * Colorize console string with `black` color.
+   * @param value string
+   * @returns string
+   */
+  static black(value: string): string {
     return this.colorize(value, Colors.Black);
   }
 
-  static red(value: string) {
+  /**
+   * Colorize console string with `red` color.
+   * @param value string
+   * @returns string
+   */
+  static red(value: string): string {
     return this.colorize(value, Colors.Red);
   }
 
-  static green(value: string) {
+  /**
+   * Colorize console string with `green` color.
+   * @param value string
+   * @returns string
+   */
+  static green(value: string): string {
     return this.colorize(value, Colors.Green);
   }
 
-  static yellow(value: string) {
+  /**
+   * Colorize console string with `yellow` color.
+   * @param value string
+   * @returns string
+   */
+  static yellow(value: string): string {
     return this.colorize(value, Colors.Yellow);
   }
 
-  static blue(value: string) {
+  /**
+   * Colorize console string with `blue` color.
+   * @param value string
+   * @returns string
+   */
+  static blue(value: string): string {
     return this.colorize(value, Colors.Blue);
   }
 
-  static magenta(value: string) {
+  /**
+   * Colorize console string with `magenta` color.
+   * @param value string
+   * @returns string
+   */
+  static magenta(value: string): string {
     return this.colorize(value, Colors.Magenta);
   }
 
-  static cyan(value: string) {
+  /**
+   * Colorize console string with `cyan` color.
+   * @param value string
+   * @returns string
+   */
+  static cyan(value: string): string {
     return this.colorize(value, Colors.Cyan);
   }
 
-  static white(value: string) {
+  /**
+   * Colorize console string with `white` color.
+   * @param value string
+   * @returns string
+   */
+  static white(value: string): string {
     return this.colorize(value, Colors.White);
   }
 
-  static gray(value: string) {
+  /**
+   * Colorize console string with `gray` color.
+   * @param value string
+   * @returns string
+   */
+  static gray(value: string): string {
     return this.colorize(value, Colors.Gray);
   }
 
-  static brightRed(value: string) {
+  /**
+   * Colorize console string with `bright red` color.
+   * @param value string
+   * @returns string
+   */
+  static brightRed(value: string): string {
     return this.colorize(value, Colors.BrightRed);
   }
 
-  static brightGreen(value: string) {
+  /**
+   * Colorize console string with `bright green` color.
+   * @param value string
+   * @returns string
+   */
+  static brightGreen(value: string): string {
     return this.colorize(value, Colors.BrightGreen);
   }
 
-  static brightYellow(value: string) {
+  /**
+   * Colorize console string with `bright yellow` color.
+   * @param value string
+   * @returns string
+   */
+  static brightYellow(value: string): string {
     return this.colorize(value, Colors.BrightYellow);
   }
 
-  static brightBlue(value: string) {
+  /**
+   * Colorize console string with `bright blue` color.
+   * @param value string
+   * @returns string
+   */
+  static brightBlue(value: string): string {
     return this.colorize(value, Colors.BrightBlue);
   }
 
-  static brightMagenta(value: string) {
+  /**
+   * Colorize console string with `bright magenta` color.
+   * @param value string
+   * @returns string
+   */
+  static brightMagenta(value: string): string {
     return this.colorize(value, Colors.BrightMagenta);
   }
 
-  static brightCyan(value: string) {
+  /**
+   * Colorize console string with `bright cyan` color.
+   * @param value string
+   * @returns string
+   */
+  static brightCyan(value: string): string {
     return this.colorize(value, Colors.BrightCyan);
   }
 
-  static brightWhite(value: string) {
+  /**
+   * Colorize console string with `bright white` color.
+   * @param value string
+   * @returns string
+   */
+  static brightWhite(value: string): string {
     return this.colorize(value, Colors.BrightWhite);
   }
 }
