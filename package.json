@@ -1,0 +1,9 @@
+{
+  "name": "res-generator",
+  "version": "1.0.0",
+  "description": "Resources generator using NodeJS to use in Tauri Apps.",
+  "main": "index.js",
+  "author": "xone.tognon@outlook.com",
+  "license": "MIT",
+  "private": false
+}
