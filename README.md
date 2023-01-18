@@ -1,8 +1,10 @@
-# Resources Generator
+# Tauri Resources Generator
 
 ## About
 
-Resources Generator using NodeJS, Typescript and Sharp to use in Tauri Apps.
+[Tauri Apps](https://tauri.app/) resources generator using Node.
+
+> Alternative to [CLI](https://tauri.app/v1/guides/features/icons/).
 
 ## How to Use
 
